@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Brenda Designs</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('bg2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      background-color: #736f66;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #007bff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 90px;
+      width: auto;
+    }
+
+    header .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+      padding-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    main {
+      padding: 40px 0;
+    }
+
+    h1 {
+      color: #007bff;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .about-section img {
+      flex: 1 1 300px;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+    }
+
+    .about-text h2 {
+      margin-bottom: 10px;
+      color: #222;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 5px;
+    }
+
+    .about-text p,
+    .about-text ul,
+    .about-text address {
+      font-size: 1.05em;
+    }
+
+    .about-text ul {
+      padding-left: 20px;
+    }
+
+    .site-footer {
+      background-color: #736f66;
+      border-top: 1px solid #eaeaea;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+      color: white;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #fdd835;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        justify-content: center;
+        padding-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="Logo.png" alt="Brenda Designs Logo" />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="Shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="support.html">Support</a>
+        <a href="delivery.html">Delivery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>About Us</h1>
+
+    <div class="about-section">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>Founded in 2015, Brenda Designs began as a small boutique in Nairobi, Kenya, with a vision to redefine African fashion. What started as a single seamstress's dream has blossomed into a thriving brand known for its unique blend of traditional and contemporary styles.</p>
+      </div>
+      <img src="seewing.jpeg" alt="Tailor working on traditional fabrics">
+    </div>
+
+    <div class="about-section">
+      <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>At Brenda Designs, our mission is to empower individuals through fashion. We believe that clothing is more than just fabric; it's a form of self-expression. Our goal is to create pieces that make our clients feel confident and beautiful.</p>
+      </div>
+      <img src="dressme.webp" alt="Confident woman in fashion outfit">
+    </div>
+
+    <div class="about-section">
+      <div class="about-text">
+        <h2>Our Services</h2>
+        <ul>
+          <li><strong>Custom Tailoring:</strong> Personalized designs that reflect your unique style.</li>
+          <li><strong>Ready-to-Wear Collections:</strong> Trendy outfits for every occasion.</li>
+          <li><strong>Bridal Wear:</strong> Elegant and bespoke wedding gowns and accessories.</li>
+        </ul>
+      </div>
+      <img src="fashion sketch.avif" alt="Fashion sketches and tools">
+    </div>
+
+    <div class="about-section">
+      <div class="about-text">
+        <h2>Meet the Team</h2>
+        <p>Our team is the heart of Brenda Designs. Each member brings their expertise and passion to the table, ensuring that every piece we create is of the highest quality.</p>
+      </div>
+      <img src="fashionteam.avif" alt="Fashion team working together">
+    </div>
+
+    <div class="about-section">
+      <div class="about-text">
+        <h2>Our Achievements</h2>
+        <ul>
+          <li>Featured in <em>Vogue Africa</em> as one of the top emerging designers.</li>
+          <li>Winner of the 2023 Nairobi Fashion Week Best Designer Award.</li>
+          <li>Collaborated with international brands to showcase African fashion on global platforms.</li>
+        </ul>
+      </div>
+      <img src="dress.webp" alt="Fashion achievement image">
+    </div>
+
+    <div class="about-section">
+      <div class="about-text">
+        <h2>Visit Us</h2>
+        <address>
+          Brenda Designs Studio<br />
+          Brenda Fashion Avenue<br />
+          Kiambu, Kenya
+        </address>
+      </div>
+      <img src="Logo.png" alt="Brenda Designs Nairobi">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="Logo.png" alt="Brenda Designs Logo" />
+      </a>
+      <p>&copy; 2025 Brenda Designs. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

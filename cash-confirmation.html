@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cash Payment Confirmation</title>
+  <style>
+    :root {
+      --main-color: #ff7b00;
+      --text-color: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('backgroundimg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .confirmation-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .confirmation-box h1 {
+      color: var(--main-color);
+      margin-bottom: 20px;
+    }
+
+    .confirmation-box p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .confirmation-box button {
+      background-color: var(--main-color);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .confirmation-box button:hover {
+      background-color: #cc6200;
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-box">
+    <h1>Order Confirmed!</h1>
+    <p>Thank you for your order. You selected <strong>Cash on Delivery</strong>.</p>
+    <p>Your items will be delivered soon. Please prepare payment upon delivery.</p>
+    <button onclick="window.location.href='index.html'">Return to Home</button>
+  </div>
+</body>
+</html>

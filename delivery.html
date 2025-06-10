@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Delivery Options</title>
+  <style>
+    :root {
+      --main-color: #ff7b00;
+      --text-color: #333;
+    }
+
+    /* --- Navigation Header --- */
+    .site-header {
+      background-color: gray;
+      border-bottom: 1px solid #eaeaea;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .site-header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--main-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      height: 90px;
+      width: auto;
+    }
+
+    .main-nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color:white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .main-nav a:hover {
+      color: var(--main-color);
+    }
+
+
+    body {
+  background: url('backgroundimg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-color);
+  /* keep your existing body styles */
+}
+
+
+
+
+    /* --- Delivery Form --- */
+    .delivery-container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 25px;
+      background: #fff;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .delivery-container h1,
+    .delivery-container h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    input[type="text"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .delivery-options label {
+      display: block;
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .delivery-options input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    button {
+      background-color: var(--main-color);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* --- Footer --- */
+    .site-footer {
+      background-color: gray;
+      border-top: 1px solid #eaeaea;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .site-footer .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      text-decoration: white;
+      color: white;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: var(--main-color);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="Logo.png" alt="Brenda Designs Logo" />
+        
+      </div>
+      <nav class="main-nav">
+        <a href="aboutus.html">About Us</a>
+        <a href="Shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="support.html">Support</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="delivery-container">
+      <h1>Select Delivery Method</h1>
+      <form>
+        <div class="address-section">
+          <h2>Shipping Address</h2>
+          <input type="text" placeholder="Full Name" required />
+          <input type="text" placeholder="Street Address" required />
+          <input type="text" placeholder="City" required />
+          <input type="text" placeholder="ZIP Code" required />
+        </div>
+
+        <div class="delivery-options">
+          <h2>Delivery Method</h2>
+          <label>
+            <input type="radio" name="delivery" value="standard" checked />
+            Standard Delivery (3-5 days) – Free
+          </label>
+          <label>
+            <input type="radio" name="delivery" value="express" />
+            Express Delivery (1-2 days) – KSH 300.99
+          </label>
+          <label>
+            <input type="radio" name="delivery" value="same-day" />
+            Same-Day Delivery – KSH 450.99
+          </label>
+        </div>
+
+        <button type="submit">Continue to Payment</button>
+
+
+        <label>
+          <input type="radio" name="payment" value="mpesa" checked />
+          <img src="MPESA LOGO.png" alt="MPESA" style="height: 24px; vertical-align: middle; margin-right: 8px;" />
+          MPESA
+        </label>
+        
+
+        <label>
+          <input type="radio" name="payment" value="cash" />
+          <img src="CASH.png" alt="cash" style="height: 24px; vertical-align: middle; margin-right: 8px;" />
+         CASH 
+        </label>
+      </div>
+
+
+
+
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    
+    <div class="container">
+      <div class="logo">
+        <img src="Logo.png" alt="Brenda Designs Logo" />
+        
+      </div>
+      <p>&copy; 2025 Brenda Designs. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+  
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Load cart data from localStorage
+  const cartData = JSON.parse(localStorage.getItem('cartData') || '[]');
+  const total = localStorage.getItem('cartTotal');
+
+  if (!cartData.length) {
+    alert('No products in cart. Redirecting...');
+    window.location.href = 'shop.html';
+    return;
+  }
+
+  // Show order total
+  const container = document.querySelector('.delivery-container');
+  const totalEl = document.createElement('h3');
+  totalEl.textContent = `Order Total: ksh ${parseFloat(total).toLocaleString()}`;
+  container.insertBefore(totalEl, container.querySelector('form'));
+
+  // Handle form submission and payment method selection
+  const form = container.querySelector('form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent form reload
+
+    const selectedPayment = document.querySelector('input[name="payment"]:checked').value;
+    console.log('Selected Payment:', selectedPayment);
+
+    if (selectedPayment === 'mpesa') {
+      alert("Simulating MPESA payment...\nEnter your PIN on your phone to complete the payment.");
+      // You could redirect to a confirmation page after a delay
+      setTimeout(() => {
+        window.location.href = 'mpesa-confirmation.html'; // or keep user on same page
+      }, 2000);
+    } else if (selectedPayment === 'cash') {
+      alert("Pay with CASH.\nYou will pay upon delivery...");
+      setTimeout(() => {
+        window.location.href = 'cash-confirmation.html';
+      }, 1500);
+
+
+      
+    } else {
+      alert("Please select a valid payment method.");
+    }
+  });
+});
+
+
+</script>
+
+
+
+  
+  
+</body>
+</html>
